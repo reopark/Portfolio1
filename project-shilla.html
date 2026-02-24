@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Project - shilla</title>
+    <link rel="stylesheet" href="com.css">
+    <link rel="stylesheet" href="project.css" />
+    <link rel="stylesheet" href="project-shilla.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <!-- header 시작-->
+    <header>
+        <div class='logo'><a href="index.html">THE SHILLA · Web Project</a></div>
+        <ul class="menu">
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#design">Design</a></li>
+            <li><a href="#result">Result</a></li>
+        </ul>
+    </header>
+    <!-- header 끝-->
+    <!-- main 시작 -->
+    <main id="top" class="main">
+        <div class="img_box">
+            <img src="images/project/shilla/main.png" alt="shilla Web Redesign" />
+            <div class="img_fade"></div>
+        </div>
+        <div class="text_box">
+            <div class="text_top"><span>WEB PROJECT · UI/UX · PUBLISHING</span></div>
+            <div class="text_title"><h1>Shilla<br>Website Renewal</h1></div>
+
+            <p>
+                메인/로그인/다이닝 페이지를 중심으로 정보 구조를 정리하고, 브랜드 톤을 유지한 채 실제 구현 기준으로 UI 시스템과 인터랙션을 정리했습니다
+            </p>
+
+            <div class="text_meta">
+                <div class="meta">
+                    <span class="meta1">Role</span>
+                    <span class="meta2">UI/UX · Publishing</span>
+                </div>
+                <div class="meta">
+                    <span class="meta1">Pages</span>
+                    <span class="meta2">Main / Login / Dining</span>
+                </div>
+                <div class="meta">
+                    <span class="meta1">Tools</span>
+                    <span class="meta2">Figma · HTML/CSS · jQuery</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main 끝 -->
+
+    <!-- section1 시작 -->
+    <section id="overview" class="section1">
+        <div class="container">
+            <div class="section_title">
+                <div class="_num"><span>01</span></div>
+                <div class="title"><h2>Overview</h2></div>
+                <div class="lead">
+                    <p>
+                        프리미엄 호텔 브랜드의 ‘여백’과 ‘정돈감’을 유지하면서도, 핵심 진입(예약/탐색)을 더 명확히 만드는 것이 목표였습니다.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <div class="card_title"><h3>Problem</h3></div>
+                    <ul class="list">
+                        <li>메인사이트에서 제대로 된 정보가 없음</li>
+                        <li>이벤트 , 다이닝 콘텐츠를 확인할려면 여기저기 들어가서 확인해야함</li>
+                        <li>호텔 종류가 많아 하나하나 들어가서 확인해야함</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card_title"><h3>Goal</h3></div>
+                    <ul class="list">
+                        <li>예약 영역을 메인 중심에 배치해 첫 화면에서 핵심 행동을 유도</li>
+                        <li>타이포·간격·카드 시스템을 재정의해 프리미엄 톤앤매너 강화</li>
+                        <li>탐색 구조를 단순화하여 ‘필터 → 리스트 → 상세’ 흐름으로 개선</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="shot">
+                <div class="shot_img">
+                    <img src="images/project/shilla/main.png" alt="Mockup View" />
+                </div>
+            <div class="shot_text">
+                <p>
+                    메인 이미지와 예약 바(Hotel / Date / Guests)를 중심으로 흐름을 정리했습니다.
+                </p>
+            </div>
+            </div>
+
+            <div class="boxs">
+                <div class="box">
+                    <div class="box_img">
+                    <img src="images/project/shilla/overwiew-main.png" alt="Main Page" />
+                    </div>
+                    <div class="box_text"><p>Main Page</p></div>
+                </div>
+
+                <div class="box">
+                    <div class="box_img">
+                    <img src="images/project/shilla/overwiew-login.png" alt="Product List" />
+                    </div>
+                    <dlv class="box_text"><p>Login</p></dlv>
+                </div>
+
+                <div class="box">
+                    <div class="box_img">
+                    <img src="images/project/shilla/overview-dining.png" alt="Product Detail" />
+                    </div>
+                    <div class="box_text"><p>Dining</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section1 끝 -->
+    <!-- section2 시작 -->
+    <section id="process" class="section2">
+        <div class="container">
+            <div class="section_title">
+                <div class="_num"><span>02</span></div>
+                <div class="title"><h2>Process</h2></div>
+                <div class="lead">
+                    <p>브랜드의 프리미엄 톤을 유지하면서, 사용자 탐색 흐름을 단순화하는 것을 기준으로 설계했습니다.</p>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <div class="t-item">
+                    <span class="cir"></span>
+                    <div class="t-card">
+                        <h4>Research</h4>
+                            <p>프리미엄 호텔 사이트 벤치마킹과 예약 중심 사용자 흐름(CTA) 분석</p>
+                    </div>
+                </div>
+
+                <div class="t-item">
+                    <span class="cir"></span>
+                    <div class="t-card">
+                        <h4>Structure</h4>
+                        <p>메뉴·섹션 정보 구조를 재정리하고 리스트 탐색 흐름을 단순화</p>
+                    </div>
+                </div>
+
+                <div class="t-item">
+                    <span class="cir"></span>
+                    <div class="t-card">
+                        <h4>UI System</h4>
+                        <p>타이포·여백·카드·버튼 규칙을 정리해 일관된 디자인 시스템 구축</p>
+                    </div>
+                </div>
+
+                <div class="t-item">
+                    <span class="cir"></span>
+                    <div class="t-card">
+                        <h4>Publishing</h4>
+                        <p>컴포넌트 단위 퍼블리싱 및 필터·드롭다운 등 인터랙션 구현</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section2 끝 -->
+    <!-- section3 시작 -->
+    <section id="design" class="section3">
+        <div class="container">
+            <div class="section_title">
+                <div class="_num"><span>03</span></div>
+                <div class="title"><h2>Design Direction</h2></div>
+                <div class="lead">
+                    <p>프리미엄 분위기를 유지하기 위해 “여백, 질감, 소프트 라인”을 기준으로 톤을 설계했습니다.</p>
+                </div>
+            </div>
+            <div class="mood">
+                <div class="mood_text">
+                    <h3>Mood / Keywords</h3>
+                    <p>Premium · Calm Luxury · Warm Neutral · Spacious Layout · Refined UI</p>
+                </div>
+                <div class="mood_item">
+                    <img src="images/project/shilla/mood1.png" alt="Dining Table" />
+                    <img src="images/project/shilla/mood2.png" alt="Resort Pool" />
+                    <img src="images/project/shilla/mood3.png" alt="Cocktail Light" />
+                    <img src="images/project/shilla/mood4.png" alt="Lounge Interior" />
+                    <img src="images/project/shilla/mood5.png" alt="Nature Walk" />
+                    <img src="images/project/shilla/mood6.png" alt="Fine Dish Closeup" />
+                </div>
+
+                <div class="mood_tags">
+                    <div class="tag"><span>Premium</span></div>
+                    <div class="tag"><span>Calm Luxury</span></div>
+                    <div class="tag"><span>Warm Neutral</span></div>
+                    <div class="tag"><span>Refined UI</span></div>
+                </div>
+            </div>
+            <div class="style_guide">
+                <div class="style_title"><h2>Style Guide</h2></div>
+                </div>
+                <div class="style_box">
+                    <h4>Typography</h4>
+                    <span class="b">Aa 가나다</span>
+                    <p>h2 : 40px / h3 : 32px, 24px, 22px / h4 : 18px / h5 : 16px / h6 : 14px / Body : 14px / a : 18px, 16px / span : 12px / li : 20px / p : 18px</p>
+                </div>
+                <div class="style_box">
+                    <h4>Color</h4>
+                    <div class="color">
+                        <div>
+                            <span class="swatch c1"></span>
+                            <span class="_text">rgba(0,0,0,0.8)</span>
+                        </div>
+                        <div>
+                            <span class="swatch c2"></span>
+                            <span class="_text">rgba(0,0,0,0.3)</span>
+                        </div>
+                        <div>
+                            <span class="swatch c3"></span>
+                            <span class="_text">rgba(0,0,0,0.9)</span>
+                        </div>
+                        <div>
+                            <span class="swatch c4"></span>
+                            <span class="_text">rgba(255,255,255,0.1)</span>
+                        </div>
+                        <div>
+                            <span class="swatch c5"></span>
+                            <span class="_text">#fff</span>
+                        </div>
+                        <div>
+                            <span class="swatch c6"></span>
+                            <span class="_text">#eeeeee</span>
+                        </div>
+                        <div>
+                            <span class="swatch c7"></span>
+                            <span class="_text">#000</span>
+                        </div>
+                        <div>
+                            <span class="swatch c8"></span>
+                            <span class="_text">rgba(0,0,0,0.2)</span>
+                        </div>
+                        <div>
+                            <span class="swatch c9"></span>
+                            <span class="_text">#666666</span>
+                        </div>
+                        <div>
+                            <span class="swatch c10"></span>
+                            <span class="_text">#dddddd</span>
+                        </div>
+                        <div>
+                            <span class="swatch c11"></span>
+                            <span class="_text">#999999</span>
+                        </div>
+                        <div>
+                            <span class="swatch c12"></span>
+                            <span class="_text">rgba(9,110,9,0.651)</span>
+                        </div>
+                        <div>
+                            <span class="swatch c13"></span>
+                            <span class="_text">#f6f6f6</span>
+                        </div>
+                        <div>
+                            <span class="swatch c14"></span>
+                            <span class="_text">rgba(102,102,102,0.4)</span>
+                        </div>
+                        <div>
+                            <span class="swatch c15"></span>
+                            <span class="_text">#3c3c3c</span>
+                        </div>
+                        <div>
+                            <span class="swatch c16"></span>
+                            <span class="_text">#888888</span>
+                        </div>
+                        <div>
+                            <span class="swatch c17"></span>
+                            <span class="_text">rgba(255,255,255,0.6)</span>
+                        </div>
+                        <div>
+                            <span class="swatch c18"></span>
+                            <span class="_text">#cccccc</span>
+                        </div>
+                        <div>
+                            <span class="swatch c19"></span>
+                            <span class="_text">#efe2c4</span>
+                        </div>
+                        <div>
+                            <span class="swatch c20"></span>
+                            <span class="_text">#eaeaea</span>
+                        </div>
+                        <div>
+                            <span class="swatch c21"></span>
+                            <span class="_text">#856f56</span>
+                        </div>
+                        <div>
+                            <span class="swatch c22"></span>
+                            <span class="_text">#dcdcdc</span>
+                        </div>
+                        <div>
+                            <span class="swatch c23"></span>
+                            <span class="_text">#846e54</span>
+                        </div>
+                        <div>
+                            <span class="swatch c24"></span>
+                            <span class="_text">#d7aa47</span>
+                        </div>
+                        <div>
+                            <span class="swatch c25"></span>
+                            <span class="_text">#e9e9e9</span>
+                        </div>
+                        <div>
+                            <span class="swatch c26"></span>
+                            <span class="_text">#c5c5c5</span>
+                        </div>
+                        <div>
+                            <span class="swatch c27"></span>
+                            <span class="_text">#333333</span>
+                        </div>
+                        <div>
+                            <span class="swatch c28"></span>
+                            <span class="_text">#555555</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="style_box">
+                    <h4>Components</h4>
+
+                    <div class="comp">
+                        <button class="btn btn1 btn6">예약하기</button>
+                        <button class="btn btn1">검색</button>
+                        <button class="btn btn1">지금 가입하기</button>
+                        <button class="btn btn1">로그인하기</button>
+                        <button class="btn btn1">회원가입</button>
+                    </div>
+
+                    <div class="comp">
+                        <button class="btn btn2">전체</button>
+                        <button class="btn btn2">레스토랑</button>
+                        <button class="btn btn2">라운지 & 바</button>
+                        <button class="btn btn2">베이커리</button>
+                    </div>
+                    <div class="comp">
+                        <input class="input" placeholder="검색어를 입력하세요" />
+                    </div>
+                </div>
+                <div class="style_box">
+                    <h4>Icons</h4>
+                    <div class="comp">
+                        <div class="item">
+                            <i class="fa-solid fa-plus"></i>
+                            <span class="icon_label">플러스</span>
+                        </div>
+                        <div class="item">
+                            <i class="fa-solid fa-minus"></i>
+                            <span class="icon_label">마이너스</span>
+                        </div>
+                        <div class="item">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span class="icon_label">검색</span>
+                        </div>
+                        <div class="item">
+                            <i class="fa-solid fa-angle-left"></i>
+                            <span class="icon_label">왼쪽</span>
+                        </div>
+                        <div class="item">
+                            <i class="fa-solid fa-angle-right"></i>
+                            <span class="icon_label">오른쪽</span>
+                        </div>
+                    </div>
+                    <div class="comp">
+                        <div class="item">
+                            <i class="fa-solid fa-angle-down icon"></i>
+                            <span class="icon_label">옵션 펼치기</span>
+                        </div>
+                        <div class="item">
+                            <i class="fa-brands fa-instagram"></i>
+                            <span class="icon_label">인스타그램</span>
+                        </div>
+                        <div class="item">
+                            <i class="fa-brands fa-kakao-talk"></i>
+                            <span class="icon_label">카카오톡</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section3 끝 -->
+    <!-- section4 시작 -->
+    <section id="result" class="section4">
+        <div class="container">
+            <div class="section_title">
+                <div class="_num"><span>04</span></div>
+                <div class="title"><h2>Result</h2></div>
+                <div class="lead">
+                    <p>리뉴얼을 통해 “진입 동선”과 “UI 일관성”을 동시에 개선했습니다.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <div class="card_title"><h3>Key Learnings</h3></div>
+                    <ul class="list">
+                        <li>예약 CTA를 히어로 중심에 배치했을 때 사용자 행동 유도가 명확해짐</li>
+                        <li>컴포넌트 간 간격·타이포 규칙만 통일해도 브랜드 완성도가 상승함</li>
+                        <li>리스트 UX는 ‘필터 → 결과 → 상세’ 흐름이 탐색 효율에 핵심적임</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card_title"><h3>Next Step</h3></div>
+                    <ul class="list">
+                        <li>썸네일 인터랙션을 추가해 탐색 경험 개선</li>
+                        <li>반응형 환경에서 예약바를 Step UI 형태로 재구성</li>
+                        <li>다이닝 리스트를 데이터 기반 구조로 확장해 유지보수성 강화</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="button">
+                <a href="https://github.com/reopark/shilla_hotel" class="btn" target="_blank">GitHub</a>
+                <a href="https://shillahotel01.netlify.app" class="btn">Website</a>
+                <a href="https://www.figma.com/design/7zzOiSOcMG2x2mnia0qW9b/%ED%98%B8%ED%85%94?t=hnTnToF4WOU0ljRG-1" class="btn">Figma</a>
+            </div>
+        </div>
+    </section>
+    <!-- section4 끝 -->
+    <!-- pop 시작 -->
+    <div class="pop">
+        <div class="bg"></div>
+        <div class="cont">
+            <img src="" alt="">
+        </div>
+        <i class="fa-solid fa-x"></i>
+    </div>
+    <!-- pop 끝 -->
+    <!-- footer 시작-->
+    <footer>
+        <div class="footer1">
+            <p>© 2026 Portfolio</p>
+            <p>Designed & Published by You</p>
+        </div>
+    </footer>
+    <!-- footer 끝 -->
+</body>
+</html>

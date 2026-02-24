@@ -1,0 +1,365 @@
+
+/* header */
+header {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    z-index: 100;
+    border-bottom: 2px solid #333333;
+}
+
+header .menu2 ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* title */
+.title {
+    position: fixed;
+    padding-top: 80px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 99;
+    border-bottom: 1px solid #dddddd;
+    transform: translateY(0);   /* 처음엔 보임 */
+    opacity: 1;
+
+    transition:transform 0.45s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+}
+
+.title.hide {
+    transform: translateY(-120%);
+    opacity: 0;
+}
+.title .text_group {
+    padding: 10px 20px;
+}
+
+.title .text_group ul {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    margin-left: 60px;
+    padding: 20px;
+}
+
+.title .text_group ul li {
+    border: 1px solid #000;
+    border-radius: 30px;
+}
+
+.title .text_group ul li.on {
+    background-color: #000;
+    color: #fff;
+}
+
+.title .text_group ul li a {
+    padding: 10px 15px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+
+/* 공통 */
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    transition: padding-top 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+section.reset {
+    padding-top: 80px; /* header만 */
+}
+
+section .text {
+    width: 90%;
+    max-width: 1700px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+section .text h4 {
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.section1 img, .section2 img, .section3 img, .section4 img {
+    transition: transform .35s ease;
+}
+
+.section1 .text_box .desc, .section2 .text_box .desc{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;       /* 2줄 제한 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+
+/* section1 */
+.section1 {
+    padding-top: 180px;
+}
+
+.section1 .container {
+    width: 90%;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.section1 .container .box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.section1 .container .box .item {
+    flex: 0 0 calc(300px - 30px);
+    box-sizing: border-box;
+    border-radius: 15px;
+    overflow: hidden;
+    transition:0.35s;
+}
+
+.section1 .container .item .img_box {
+    overflow: hidden;
+    width: 100%;
+}
+
+.section1 .container .item img {
+    width: 100%;
+    height: 350px;
+    transition: 0.5s;
+}
+
+.section1 .container .item img:hover {
+    transform: scale(1.1);
+}
+
+.section1 .container .item .text_box {
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.section1 .container .item .text_box h4 {
+    color: #888888;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.section1 .container .item .text_box .desc {
+    font-size: 12px;
+    color: #666666;
+    line-height: 1.45;
+}
+
+@media (max-width : 1000px) {
+    .section1 .container .box .item{ 
+        flex: 0 0 calc(50% - 15px); 
+    }
+}
+
+/* section2 */
+.section2 .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 90%;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.section2 .container .item {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    transition:0.35s;
+}
+
+.section2 .container .item .img_box {
+    overflow: hidden;
+}
+
+.section2 .container .item img {
+    height: 250px;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.section2 .container .item img:hover {
+    transform: scale(1.05);
+}
+
+.section2 .container .item .text_box {
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.section2 .container .item .text_box h4 {
+    color: #888888;
+    margin-bottom: 10px;
+}
+
+
+/* section3 */
+.section3 .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    width: 90%;
+    max-width: 1700px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section3 .container .item {
+    width: 100%;
+    border: 1px solid #dddddd;
+    height: 650px;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.35s;
+    border-radius: 15px;
+}
+
+.section3 .container .item::after{
+    content:'';
+    position:absolute;
+    inset:0;
+    background-color: rgba(0,0,0,0.5);
+    opacity:0;
+    transition: 0.25s ease;
+    z-index:9;
+    pointer-events:none;
+}
+
+.section3 .container .item:hover::after{
+    opacity:1;
+}
+
+.section3 .container .item::before{
+    z-index:10;
+    pointer-events:none;
+}
+
+.section3 .container .item::before {
+    content: "Click";
+    font-size: 13px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    background-image: linear-gradient(transparent, white 90%);
+    color: #666666;
+}
+
+.section3 .container .item .img_box {
+    overflow: hidden;
+    height: 500px;
+}
+
+.section3 .container .item img {
+    transition: 0.5s;
+}
+
+.section3 .container .item img:hover {
+    transform: scale(1.03);
+}
+
+/* section4 */
+.section4 {
+    padding-top: 20px;
+}
+
+.section4 .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 90%;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.section4 .container .item {
+    width: calc(50% - 10px);
+
+}
+
+/* pop */
+.pop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: none;
+}
+
+.pop img {
+    width: 100%;
+    display: block;
+}
+
+.pop .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.pop .cont {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(800px, 92vw);
+    height: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.pop i {
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+
+  .section2 .container{ grid-template-columns: 1fr; }
+  .section4 .container .item{ width: 100%; }
+}
